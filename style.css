@@ -1,0 +1,75 @@
+.modal-container {
+
+    position: fixed;
+        display: none;
+        background-color: rgba(103, 148, 163, 0.88);
+        margin-left: 30%;
+        width: 300px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(48, 101, 123);
+        color: azure;
+}
+
+.field {
+
+    width: 100vh;
+    height: 66vh;
+    background-color: rgb(70, 132, 70);
+    display: flex;
+      
+}
+
+.ball {
+    position:static;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+        
+}
+
+.light-container {
+    width: 270px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: gray;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.highlight-container p:hover {
+   background-color:rgb(214, 147, 95);
+   transition: background-color 0.3s;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-container button:hover .tooltip 
+{
+   opacity: 1;
+}
+
+.tooltip{
+    position: absolute;
+    padding: 8px;
+    background-color: rgb(109, 35, 136);
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    
+}
